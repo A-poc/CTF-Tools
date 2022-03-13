@@ -83,7 +83,7 @@ Steganography
   	![Screenshot_4](https://user-images.githubusercontent.com/100603074/158079711-8e67816f-36b0-46e8-a1c9-f820e4568beb.jpg)
 
 
-* [Foremost](https://www.exiftool.org/)
+* [Foremost](https://www.kali.org/tools/foremost/)
 
 	Tool for extracting hidden data from files.
   
