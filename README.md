@@ -14,7 +14,9 @@ CTF-Tools
 2. [Steganography](#steganography)
     - Steghide
     - Binwalk
+    - Foremost
     - Exiftool
+    - StegoVeritas
 10. [Misc](#misc)
     - Barcode Reader (*Inlite*)
     - Barcode Reader (*Aspose*)
@@ -61,7 +63,7 @@ Steganography
   
   `steghide info file` : displays info about whether a file has embedded data or not.
   
-  `steghide extract -sf file [--passphrase password]` : extracts embedded data from a file [using a password]
+  `steghide extract -sf file [--passphrase password]` : extracts embedded data from a file [using a password].
   
   ![Screenshot_5](https://user-images.githubusercontent.com/100603074/158079780-c9f88efe-0b06-4845-b988-919dab07015f.jpg)
 
@@ -70,22 +72,42 @@ Steganography
   
   Tool for viewing and extracting hidden data from files.
   
-	`binwalk file` : Displays the embedded data in the given file
+	`binwalk file` : Displays the embedded data in the given file.
   
-  `binwalk -e file` : Displays and extracts the data from the given file
+  `binwalk -e file` : Displays and extracts the data from the given file.
   
-  `binwalk --dd ".*" file` : Displays and extracts the data from the given file
+  `binwalk --dd ".*" file` : Displays and extracts the data from the given file.
   
   ![Screenshot_4](https://user-images.githubusercontent.com/100603074/158079711-8e67816f-36b0-46e8-a1c9-f820e4568beb.jpg)
+
+
+* [Foremost](https://www.exiftool.org/)
+
+	For extracting hidden data from files.
+  
+	`foremost -i file` : extracts data from the given file.
+
+	![Screenshot_10](https://user-images.githubusercontent.com/100603074/158080315-9b716ba8-0b0e-48f6-9e3b-09559ce40482.jpg)
 
   
 * [Exiftool](https://www.exiftool.org/)
 
 	Tool for viewing file metadata.
   
-  `exiftool file` : shows the metadata of the given file
+  	`exiftool file` : shows the metadata of the given file.
 
-  ![Screenshot_6](https://user-images.githubusercontent.com/100603074/158080117-fbfc5353-6f91-49dd-a90d-fe14ce60b9e6.jpg)
+  	![Screenshot_6](https://user-images.githubusercontent.com/100603074/158080117-fbfc5353-6f91-49dd-a90d-fe14ce60b9e6.jpg)
+
+
+* [StegoVeritas](https://github.com/bannsec/stegoVeritas)
+
+	Spray and pray stego tool.
+	
+	Install with `pip3 install stegoveritas`
+	
+	`stegoveritas file` : attempts all stego modules on the file.
+	
+	![Screenshot_11](https://user-images.githubusercontent.com/100603074/158081013-a83c9f46-458e-4d72-9072-39c26d761827.jpg)
 
 
 Misc
